@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(32, 33, 36);
+}
+
+#app {
+    max-width: 1170px;
+    margin: auto;
+    padding: 100px;
+    text-align: center;
+    color: antiquewhite;
+    
+}
+
+#email-list {
+    list-style: none;
+}
+
+#email-list li {
+    margin: 20px 0;
+    font-size: 25px;
+}
+
+#app h1 {
+    font-size: 35px;
+}
