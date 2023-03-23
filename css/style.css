@@ -20,13 +20,23 @@ body {
 
 #email-list {
     list-style: none;
+    border-left: solid 1px antiquewhite;
+    border-right: solid 1px antiquewhite;
+    border-bottom: solid 1px antiquewhite;
+    width: 400px;
+    margin: auto;
+    padding: 20px;
 }
 
 #email-list li {
-    margin: 20px 0;
+    margin: 0 0 20px;
     font-size: 25px;
 }
 
 #app h1 {
     font-size: 35px;
+    display: inline-block;
+    background-color: antiquewhite;
+    color: rgb(32, 33, 36);
+    padding: 10px 150px;
 }
