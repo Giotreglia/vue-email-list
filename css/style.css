@@ -89,3 +89,7 @@ footer {
     margin-bottom: 30px;
 }
 
+#email-list a {
+    text-decoration: none;
+    color: antiquewhite;
+}

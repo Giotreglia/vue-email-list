@@ -20,7 +20,7 @@
         <ul id="email-list" v-if="mailArray.length == mailArrayLength">
             <li v-for="(mail, index) in mailArray">
                 <span class="index">{{ index + 1 }}</span>
-                <span>{{ mail }}</span>
+                <span><a href="mailto:example@gmail.com">{{ mail }}</a></span>
             </li>
         </ul>
     </div>
