@@ -25,7 +25,7 @@ body {
     border-bottom: solid 1px antiquewhite;
     width: 400px;
     margin: auto;
-    padding: 20px;
+    padding: 20px 20px 0px;
 }
 
 #email-list li {
