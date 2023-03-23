@@ -12,7 +12,7 @@ body {
 #app {
     max-width: 1170px;
     margin: auto;
-    padding: 100px;
+    padding: 100px 100px 20px;
     text-align: center;
     color: antiquewhite;
     
@@ -26,17 +26,66 @@ body {
     width: 450px;
     margin: auto;
     padding: 20px 20px 0px;
+    box-shadow: 5px 5px black;
+
+}
+
+.title {
+    font-size: 80px;
+    text-align: left;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 10px 10px black;
 }
 
 #email-list li {
     margin: 0 0 20px;
     font-size: 25px;
+    display: flex;
+    justify-content: space-between;
 }
 
-#app h1 {
+#list-title {
     font-size: 35px;
     display: inline-block;
     background-color: antiquewhite;
     color: rgb(32, 33, 36);
-    padding: 10px 175px;
+    padding: 10px 155px;
+    box-shadow: 5px 5px black;
 }
+
+#input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 450px;
+    margin: 30px auto;
+    box-shadow: 5px 5px black;
+}
+
+#input-container label {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: antiquewhite;
+    color: rgb(32, 33, 36);
+    display: inline-block;
+    padding: 10px;
+    box-shadow: 5px 5px black;
+}
+
+#mail-input {
+    height: 30px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(32, 33, 36);
+    border: solid 1px antiquewhite;
+    color: antiquewhite;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer {
+    color: antiquewhite;
+    text-align: center;
+    margin-bottom: 30px;
+}
+

@@ -10,11 +10,22 @@
 <body>
 
     <div id="app">
-        <h1>Mail List</h1>
+        <div id="input-container">
+            <h1 class="title">MAIL</h1>
+            <h1 class="title">GENERATOR</h1>
+            <label for="mail-input">Inserisci numero di mail da generare</label>
+            <input id="mail-input" type="text" v-model="mailArrayLength" @keyup.enter="generaMail" placeholder="inserisci numero e premi invio">
+        </div>
+        <h1 id="list-title">Mail List</h1>
         <ul id="email-list" v-if="mailArray.length == mailArrayLength">
-            <li v-for="mail in mailArray">{{ mail }}</li>
+            <li v-for="(mail, index) in mailArray">
+                <span class="index">{{ index + 1 }}</span>
+                <span>{{ mail }}</span>
+            </li>
         </ul>
     </div>
+
+    <footer>- Made by Boolean 2023 -</footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js" integrity="sha512-LUKzDoJKOLqnxGWWIBM4lzRBlxcva2ZTztO8bTcWPmDSpkErWx0bSP4pdsjNH8kiHAUPaT06UXcb+vOEZH+HpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
