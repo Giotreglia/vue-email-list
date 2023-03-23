@@ -11,7 +11,7 @@
 
     <div id="app">
         <h1>Mail List</h1>
-        <ul id="email-list">
+        <ul id="email-list" v-if="mailArray.length == mailArrayLength">
             <li v-for="mail in mailArray">{{ mail }}</li>
         </ul>
     </div>
