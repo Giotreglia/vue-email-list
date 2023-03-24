@@ -17,10 +17,10 @@
             <input id="mail-input" type="text" v-model="mailArrayLength" @keyup.enter="generaMail" placeholder="inserisci numero e premi invio">
         </div>
         <h1 id="list-title">Mail List</h1>
-        <ul id="email-list" v-if="mailArray.length == mailArrayLength">
+        <ul id="email-list" v-show="mailArray.length == mailArrayLength">
             <li v-for="(mail, index) in mailArray">
                 <span class="index">{{ index + 1 }}</span>
-                <span><a href="mailto:example@gmail.com">{{ mail }}</a></span>
+                <span><a :href="`mailto: ${mail}`">{{ mail }}</a></span>
             </li>
         </ul>
     </div>
